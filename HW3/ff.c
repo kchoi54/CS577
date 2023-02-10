@@ -64,11 +64,7 @@ int main()
         { return -1; }
 
         for(int i=0; i<size; i++)
-        {
-            //scan interval
-            scanf("%d", &job[i].start);
-            scanf("%d", &job[i].end);
-        }
+        { scanf("%d %d", &job[i].start, &job[i].end); }
 
         //heapify O(n*log(n))
         heapifyAll(job, size);
